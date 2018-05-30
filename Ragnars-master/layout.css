@@ -1,0 +1,586 @@
+	.farvekode1 {
+		background-color: #bfb488;
+	}
+
+	.farvekode2 {
+		background-color: #8c8c5e;
+	}
+
+	.farvekode3 {
+		background-color: #dde8cf;
+	}
+
+	.farvekode4 {
+
+		background-color: rgba(23, 25, 14, 0.38);
+		text-align: center;
+		font-size: 1em;
+
+	}
+
+	.farvekode5 {
+		background-color: #756f4d;
+	}
+
+	.farvekode6 {
+		background-color: #fdf3bf;
+	}
+
+	.farvekode7 {
+		background-color: #0b0f0d;
+	}
+
+	.farvekode8 {
+		background-color: rgba(23, 25, 14, 0.38);
+
+	}
+
+
+
+
+
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	@font-face {
+		font-family: 'kf';
+		src: url('fonts/webfont/kellsflf-webfont.woff2') format('woff2'),
+		url('fonts/webfont/kellsflf-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+
+	}
+
+
+	section {
+		padding: 10px 0;
+
+		margin: 5px 160px;
+		;
+	}
+
+	ul {
+		list-style-type: none;
+		display: inline;
+
+	}
+
+	li {
+		display: inline;
+	}
+
+	.hamburger,
+	.cross {
+		display: none;
+	}
+
+
+	/* HENVENDER SIG TIL FORSIDE SEKTIONEN */
+
+	.top_index {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.sectionwrapper {
+
+		min-height: 600px;
+	}
+
+	.top_index {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 10px
+	}
+
+	.column_content {
+
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-left: 10px;
+		padding-bottom: 10px;
+
+	}
+
+	.left {
+		flex-basis: 300px;
+		flex-grow: 2;
+		justify-content: flex-start;
+	}
+
+	#om .left {
+		flex-basis: 500px;
+	}
+
+	.right {
+		flex-basis: 200px;
+		flex-grow: 1;
+		justify-content: flex-end
+	}
+
+	.bottom_index {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin-top: 20px;
+	}
+
+	.column_wide {
+
+		margin-top: 50px;
+		flex-grow: 3;
+		margin-right: 20px;
+		flex-basis: 400px;
+		justify-content: flex-start;
+
+	}
+
+	#om .column_wide {}
+
+	.column_narrow {
+
+		justify-content: flex-end;
+		flex-basis: 320px;
+	}
+
+	.top {
+		background-color: blue;
+		flex-basis: 400px;
+		align-self: flex-start;
+	}
+
+	.bottom {
+		background-color: blue;
+		flex-basis: 400px;
+		align-self: flex-end;
+	}
+
+	header {
+		background-image: url(img/banner_baggrund.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+	nav {
+		background-image: url(img/bjaelke.jpg);
+		background-size: cover;
+		background-position: center;
+		position: fixed;
+		margin-top: 5px;
+		width: 100%;
+		text-align: center;
+		font-family: 'kf';
+		font-size: 1.5em;
+		border-bottom: 3px solid rgba(253, 243, 191, 0.50);
+		border-top: 3px solid rgba(253, 243, 191, 0.50);
+
+
+	}
+
+	nav a {
+		margin-left: 60px;
+		text-decoration: none;
+		color: black;
+
+	}
+
+	nav a:hover {
+		color: white;
+	}
+
+	footer {
+
+		background-image: url(img/footer_baggrund.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 150px;
+		padding-top: 10px;
+
+
+	}
+
+
+
+
+
+	h2 {
+		font-family: 'kf';
+		font-size: 1.3em;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
+	p {
+
+		font-family: 'calibri';
+		10px 10px 10px 0;
+		font-size: 1em;
+
+	}
+
+
+
+	video {
+		width: 97.1%;
+		height: 100%;
+		border-top: 15px solid black;
+		border-bottom: 15px solid black;
+		margin-top: 50px;
+		margin-right: 8px;
+
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 60px;
+	}
+
+
+	header img {
+
+		width: 190px;
+		height: 150px;
+		padding-top: 40px;
+
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.small_images {
+		width: 15%;
+	}
+
+	.ravn {
+
+		width: 170px;
+		height: 140px;
+		position: fixed;
+		right: -1px;
+		bottom: 10px;
+
+	}
+
+	.center {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.column {
+		justify-content: space-between;
+
+		flex-basis: 24%;
+		margin-left: 0.8%;
+		margin-bottom: 20px;
+		height: 200px;
+
+	}
+
+	#om .column {
+		margin-left: 0;
+		flex-basis: 47.5%;
+
+	}
+
+	#om .bottom_index {
+		margin-left: 8px;
+	}
+
+	#om .column:last-child {
+		margin-left: 31px;
+	}
+
+	.person {
+		flex-basis: 31.9%;
+	}
+
+	.person:nth-child(2) {
+		margin: 0px 13px;
+	}
+
+	.person img {
+		width: 100%;
+		height: 50%;
+
+	}
+
+	.column h2 {
+		text-align: center;
+	}
+
+	.column_context {
+		margin-right: 10px;
+
+	}
+
+	.front_img {
+		margin-top: 10px;
+	}
+
+	.so_me {
+		text-align: center;
+		background-image: url(img/bjaelke.jpg);
+		background-repeat: no-repeat;
+		flex-basis: 300px;
+		flex-grow: 1;
+		border-bottom: 3px solid rgba(253, 243, 191, 0.50);
+		border-top: 3px solid rgba(253, 243, 191, 0.50);
+
+	}
+
+	.so_me_wrapper {
+		width: auto;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+	.so_me p {
+		font-size: 1em;
+		font-family: 'kf';
+	}
+
+
+	.so_me .fb {
+		width: 35px;
+		height: 35px;
+		flex-basis: 300px;
+		float: right;
+		margin-top: -8px;
+		margin-left: 30px;
+
+
+	}
+
+
+	/*----------------------------Media quary--------------------------------- */
+
+	/*--------------------------Media quary slut------------------------------ */
+
+	@media screen and (max-width:535px) {
+		section {
+			margin: 0;
+			padding: 0;
+		}
+		video {
+			width: 98.4%;
+			height: 100%;
+			margin: 50px 0 0 0;
+			border: none;
+		}
+		.column_narrow {
+			flex-basis: 630px;
+		}
+		.ravn {
+			width: 60px;
+			height: 70px;
+		}
+
+		.column {
+			flex-basis: 100%;
+
+		}
+		.column_content {
+			margin: 0;
+		}
+
+		.top_index {
+			margin: 0;
+		}
+		.column_wide {
+			margin: 15px 0;
+		}
+
+		.hamburger,
+		.cross {
+			display: block;
+			height: 30px;
+			width: 30px;
+			background-color: black;
+			color: white;
+			border: none;
+
+
+		}
+
+		li {
+			display: block;
+			font-size: 1.2em;
+
+			margin: -7px;
+			background-image: url(img/bjaelke.png);
+			background-size: cover;
+			background-position: center;
+			height: 100%;
+
+
+
+		}
+
+		nav a {
+			color: white;
+
+		}
+
+		nav {
+			background-image: none;
+			border: none;
+		}
+
+		#om .bottom_index {
+			margin-left: 0;
+		}
+		#om .column {
+			flex-basis: 100%;
+		}
+
+		#om .column:last-child {
+			margin-left: 0;
+		}
+
+		.person {
+			flex-basis: 100%;
+		}
+
+		.person:nth-child(2) {
+			margin: 10px 0;
+		}
+
+		.ravn {
+			bottom: 123px;
+		}
+
+
+
+	}
+
+
+
+	@media screen and (min-width:536px) and (max-width: 659px) {
+		#om .column {
+			flex-basis: 97%;
+		}
+
+		#om .column:last-child {
+			margin-left: 0;
+		}
+
+		#om bottom_index {
+			margin: 10px;
+		}
+
+		#om .column_content {
+			width: 108%;
+			margin-left: -2px;
+		}
+
+
+		.person {
+			flex-basis: 97%;
+			margin-top: 10px;
+		}
+		.person:nth-child(2) {
+			margin: 0;
+		}
+
+
+		nav a {
+			margin-left: 30px;
+		}
+
+		.column {
+			flex-basis: 49%;
+		}
+
+
+
+	}
+
+	@media screen and (min-width:660px) and (max-width: 1100px) {
+
+
+		.sectionwrapper {
+			margin: 0;
+		}
+
+		.person {
+			flex-basis: 30.5%;
+		}
+
+		#om .column {
+			flex-basis: 98.7%;
+			margin: 10px 0;
+		}
+
+		#om .column:last-child {
+			margin: 0;
+		}
+
+		.column_content {
+			width: 99%;
+			margin: 0;
+		}
+
+		#om .column_content {
+			width: 100%;
+		}
+
+		#om .column_wide {
+			margin: 0;
+		}
+
+		.column_narrow {
+			flex-basis: 755px;
+		}
+
+		video {
+			width: 96.1%;
+			height: 100%;
+			margin: 100px auto;
+			border: none;
+		}
+
+		.column {
+			flex-basis: 49%;
+		}
+
+		.front_img {}
+
+		.ravn {
+			position: absolute;
+			bottom: 185px;
+		}
+
+		nav a {
+			margin-left: 20px;
+		}
+
+	}
+
+	@media screen and ( min-width:661px) and (max-width: 885px) {
+
+		.ravn {
+			position: fixed;
+			height: 120px;
+			width: 150px;
+		}
+		section {
+			margin: 5px 115px;
+		}
+
+		.column_wide {
+			margin-right: 0;
+		}
+
+		video {
+			width: 100%;
+			height: 100%;
+			margin: 40px 0;
+		}
+	}
